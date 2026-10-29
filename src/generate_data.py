@@ -1,13 +1,10 @@
-# AI-Based NVH Metamodeling
-# Dataset generation script
-
 import numpy as np
 import pandas as pd
 
 # Number of samples
 n_samples = 1000
 
-# Random beam parameters
+#Beam parameters
 length = np.random.uniform(0.5, 2.0, n_samples)      # m
 width = np.random.uniform(0.02, 0.10, n_samples)     # m
 thickness = np.random.uniform(0.005, 0.02, n_samples) # m
@@ -36,4 +33,3 @@ df.to_csv("data/beam_dataset.csv", index=False)
 
 print("Dataset generated successfully!")
 print(df.head())
-
